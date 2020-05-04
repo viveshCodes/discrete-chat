@@ -21,6 +21,8 @@ class Chatroom {
     // Setup a real time listener
     getChats(callback){
         this.chats
+            .where('room','==', this.room)
+            .orderBy('created_at')        // To use this property, we need to enable indexing for room
             .onSnapshot(snapshot =>{
                 // use docChanges() to get all changed document
                 snapshot.docChanges().forEach(change =>{
