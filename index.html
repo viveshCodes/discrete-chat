@@ -22,7 +22,7 @@
             <button class="btn" id="general">#general</button>
             <button class="btn" id="react">#react</button>
             <button class="btn" id="django">#django</button>
-            <button class="btn" id="firebase">#firebase</button>
+            <button class="btn" id="golang">#golang</button>
         </div>
 
         <!--Chat List / Window-->
@@ -58,7 +58,27 @@
         </form>
 
   </div>
-    <!--Scripts-->
+  <!--_______Firease Set Up________-->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+  <script>
+    //  Web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDb6myVfk3K-VZkh8EhlBjqlrEklCsEZQQ",
+        authDomain: "discrete-chat.firebaseapp.com",
+        databaseURL: "https://discrete-chat.firebaseio.com",
+        projectId: "discrete-chat",
+        storageBucket: "discrete-chat.appspot.com",
+        messagingSenderId: "217224446887",
+        appId: "1:217224446887:web:e37d3420fe8be9555bac82"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // Get reference to firestore
+    const db = firebase.firestore();
+  </script>
+
+    <!-- Custom Scripts-->
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
     <script src="scripts/app.js"></script>
