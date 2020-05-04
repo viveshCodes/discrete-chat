@@ -24,10 +24,24 @@
             <button class="btn" id="django">#django</button>
             <button class="btn" id="firebase">#firebase</button>
         </div>
-        
-        <!--Chat Window-->
+
+        <!--Chat List / Window-->
+        <div class="chat-window">
+            <ul class="chat-list list-group"></ul>
+        </div>
 
         <!--New Chat Form-->
+        <form class="new-chat my-3">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Your message:</div>
+              </div>
+              <input type="text" id="message" class="form-control" required>
+              <div class="input-group-append">
+                <input type="submit" class="btn" value="send">
+              </div>
+            </div>
+        </form>
 
         <!--Update Name Form-->
   </div>
