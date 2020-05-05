@@ -34,19 +34,3 @@ class Chatroom {
     }
 }
 
-
-<<<<<<< HEAD
-// setTimeout(() =>{
-//     chatroom.updateRoom("firebase");
-//     chatroom.updateUsername("viv");
-//     chatroom.getChats((data)=>{
-//         console.log(data);
-//     }); 
-//     chatroom.addChat('Hello');
-// });
-=======
-// Call getChats 
-chatroom.getChats((data) =>{
-    console.log(data);
-});
->>>>>>> parent of e913079... Feature to update username and room
