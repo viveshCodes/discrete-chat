@@ -31,8 +31,11 @@ newNameForm.addEventListener('submit', event => {
     }, 3000);
 });
 
+// Check local storage for a username 
+const username = (localStorage.username) ? localStorage.username : "anonymous";
+
 // class instances 
-const chatroom = new Chatroom('golang' , 'viv-bhai');
+const chatroom = new Chatroom('golang' , username);
 const chatUI = new ChatUI(chatlist);
 
 // get chats and render
