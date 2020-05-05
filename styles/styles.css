@@ -17,3 +17,9 @@
     color:#9999;
     font-size: 0.7em;
   }
+  .update-mssg{
+    text-align: center;
+    margin: 20px auto;
+    background:rgb(196, 97, 126);
+    color: white;
+  }
