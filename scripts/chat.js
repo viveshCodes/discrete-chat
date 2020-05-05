@@ -46,19 +46,12 @@ class Chatroom {
     }
 }
 
-// Create a new instance of our Chatroom
-const chatroom = new Chatroom('golang' , 'viv-bhai');
 
-// Call getChats 
-chatroom.getChats((data) =>{
-    console.log(data);
-});
-
-setTimeout(() =>{
-    chatroom.updateRoom("firebase");
-    chatroom.updateUsername("viv");
-    chatroom.getChats((data)=>{
-        console.log(data);
-    }); 
-    chatroom.addChat('Hello');
-});
+// setTimeout(() =>{
+//     chatroom.updateRoom("firebase");
+//     chatroom.updateUsername("viv");
+//     chatroom.getChats((data)=>{
+//         console.log(data);
+//     }); 
+//     chatroom.addChat('Hello');
+// });
