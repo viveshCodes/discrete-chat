@@ -2,6 +2,10 @@ class ChatUI {
     constructor(list){
         this.list = list;
     }
+    // clear current chat room when room changes
+    clear(){
+        this.list.innerHTML = '';
+    }    
     render(data){           // data = properties
         const when = dateFns.distanceInWordsToNow(
             data.created_at.toDate(),
